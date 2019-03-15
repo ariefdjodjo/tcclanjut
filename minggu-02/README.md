@@ -52,8 +52,3 @@ Secara umum, langkah-langkah yang kita lakukan adalah:
 
 ## by Arief Gunawan 
 
-
-Kirimkan PR ke repo upstream author.
-Upstream author me-review dan kemudian menyetujui (merge) ke master atau menolak PR.
-Jika disetujui dan di-merge ke repo master dari upstream author, sinkronkan repo di komputer lokal dan repo GitHub kontributor.
-1. Pastiikan 
