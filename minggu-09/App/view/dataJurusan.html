@@ -1,0 +1,34 @@
+{{define "dataJurusan"}}
+
+{{template "header"}}
+<div class="box box-bordered">
+    <h2 class="has-text-info is-size-15">Daftar Jurusan</h2>
+    <table class="table is-bordered is-fullwidth">
+        <thead>
+            <tr>
+                <td width="10%">No.</td>
+                <td>Nama Jurusan</td>
+                <td width="10%">#</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range . }}
+            <tr>
+                <td>{{.Id_Jurusan}}</td>
+                <td>{{.NamaJurusan}}</td>
+                <td>
+                    <div class="buttons has-addons is-centered">
+                        <a href="/editJurusan?id={{.Id_Jurusan}}" class="button is-small is-info">Edit</a>
+                        <a href="/hapusJurusan?id={{.Id_Jurusan}}" class="button is-small is-danger">Hapus</a>
+                    </div>
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>
+
+
+{{template "footer"}}
+
+{{end}}
